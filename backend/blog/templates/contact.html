@@ -1,0 +1,5 @@
+<form method="POST">
+  {% csrf_token %}<!--Django requires {% csrf_token %} in POST forms to protect against cross-site request forgery...-->
+  <input type="text" name="name" placeholder="Your name">
+  <button type="submit">Send</button>
+</form>
